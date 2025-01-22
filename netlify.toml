@@ -1,0 +1,14 @@
+ 
+[build]
+  command = "npm run build"
+  publish = ".next"
+  base = "."
+
+[functions]
+  directory = "netlify/functions"
+
+[caches]
+  paths = [
+    ".next/cache/**",
+    "node_modules/**"
+  ]
