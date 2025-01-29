@@ -30,14 +30,14 @@ export default async function ProductPage({params}: ProductProps) {
         <div className="max-w-7xl m-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div className="aspect-square ">
-                    {product.image && (
+                    
                         <Image
                             src={urlFor(product.image).url()}
                             alt={product?.productName}
                             width={500}
                             height={500}
                             className="rounded-lg shadow-md"/>
-                    )}
+                    
                 </div>
                 <div className="flex flex-col gap-8">
                     <h1 className="text-4xl font-bold">
