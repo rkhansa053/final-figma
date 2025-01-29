@@ -29,7 +29,7 @@ export default function Products() {
         {products.map((product) => (
           <div key={product._id} className="border rounded-lg shadow-md p-4 hover:shadow-lg transition">
             <Link href={`/products/${product.slug.current}`}>
-              {product.image && (
+              
                 <Image
                   src={urlFor(product.image).url()}
                   alt={product.productName}
@@ -37,7 +37,7 @@ export default function Products() {
                   height={200}
                   className="w-full h-48 object-cover rounded-md"
                 />
-              )}
+              
               <h1 className="text-lg font-semibold mt-4">{product.productName}</h1>
               <p className="text-gray-500 mt-2">${product.price}</p>
             </Link>
